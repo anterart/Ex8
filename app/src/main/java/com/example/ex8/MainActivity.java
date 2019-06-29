@@ -320,7 +320,8 @@ public class MainActivity extends AppCompatActivity {
         insertPrettyNameEditText.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
         prettyNameButton.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
         if (prettyName == null || prettyName.isEmpty()){
-            insertPrettyNameTextView.setText("Your pretty name is not yet defined, please insert it below and tap the button below to update it!");
+            String y = "Your pretty name has not been defined yet, " + userName + ", please insert it below and tap the button below to update it!";
+            insertPrettyNameTextView.setText(y);
         }
         else{
             String textToDisplay = "Hello " + prettyName + "! If you'd like to change your pretty name, please insert a new pretty name below and push the button below to update it!";
