@@ -126,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                     progress.setMessage("Wait while loading...");
                     progress.setCancelable(false);
                     progress.show();
+                    userName = insertUserNameEditText.getText().toString();
                     getImages();
                     getToken();
                     progress.dismiss();
