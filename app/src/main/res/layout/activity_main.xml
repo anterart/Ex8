@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/insertUserNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="Please insert username:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/insertUserNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:hint="Please insert username:" />
+    <TextView
+        android:id="@+id/userNameErrorTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text="The username can't be empty and should include only letters and number, no special characters!"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <Button
+        android:id="@+id/userNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Choose this username!"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/insertPrettyNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <EditText
+        android:id="@+id/insertPrettyNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:maxLines="4"
+        android:inputType="textCapSentences|textMultiLine"
+        android:hint="Insert a new pretty name here:" />
+    <Button
+        android:id="@+id/prettyNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Choose this pretty name!"/>
+    <View
+        android:layout_width="0dp"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:id="@+id/imageURLTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerImageURL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Choose this profile image!"/>
+
+    <ImageView
+        android:id="@+id/userImageImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+</LinearLayout>
