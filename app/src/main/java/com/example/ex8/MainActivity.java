@@ -294,10 +294,6 @@ public class MainActivity extends AppCompatActivity {
                 if (userResponseAsJson == null){
                     return;
                 }
-                if (info.getState() == WorkInfo.State.FAILED)
-                {
-                    System.out.println("5");
-                }
                 UserResponse userResponse = new Gson().fromJson(userResponseAsJson, UserResponse.class);
                 Log.d(TAG, "got user info: " + userResponse.data);
                 User user = userResponse.data;
