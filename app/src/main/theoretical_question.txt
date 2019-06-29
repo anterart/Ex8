@@ -1,0 +1,7 @@
+If we store the token locally:
+Advantage: save time and better performance (no need to query the server for our token all the time)
+Disadvantage: less secure, anyone who has access to the client can obtain the token
+
+If we store the token in the server:
+Advantage: more secure, only the server has access to the token
+Disadvantage: more queries are sent to the server to get the token, less efficient
